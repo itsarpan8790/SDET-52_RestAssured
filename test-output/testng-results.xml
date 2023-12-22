@@ -1,91 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-21T17:21:50 IST" name="Default suite" finished-at="2023-12-21T17:21:53 IST" duration-ms="2317">
+  <suite started-at="2023-12-22T13:26:50 IST" name="Default suite" finished-at="2023-12-22T13:26:52 IST" duration-ms="2457">
     <groups>
     </groups>
-    <test started-at="2023-12-21T17:21:50 IST" name="Default test" finished-at="2023-12-21T17:21:53 IST" duration-ms="2317">
-      <class name="practise.DDTusingDataProviderAndPojo">
-        <test-method signature="dataDrivenRMG(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:practise.DDTusingDataProviderAndPojo@59309333]" started-at="2023-12-21T17:21:50 IST" name="dataDrivenRMG" data-provider="Hardcoded" finished-at="2023-12-21T17:21:52 IST" duration-ms="2012" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Amar_Akbar_Anthony]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Movie]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Ongoing]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1990]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-12-22T13:26:50 IST" name="Default test" finished-at="2023-12-22T13:26:52 IST" duration-ms="2457">
+      <class name="practise.SchemaValidator">
+        <test-method signature="schemaCheckRmg()[pri:0, instance:practise.SchemaValidator@1189dd52]" started-at="2023-12-22T13:26:50 IST" name="schemaCheckRmg" finished-at="2023-12-22T13:26:52 IST" duration-ms="2389" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dataDrivenRMG -->
-        <test-method signature="dataDrivenRMG(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:practise.DDTusingDataProviderAndPojo@59309333]" started-at="2023-12-21T17:21:52 IST" name="dataDrivenRMG" data-provider="Hardcoded" finished-at="2023-12-21T17:21:52 IST" duration-ms="89" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sachin_Kohli_Dhoni]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Cricket]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Completed]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2000]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataDrivenRMG -->
-        <test-method signature="dataDrivenRMG(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:practise.DDTusingDataProviderAndPojo@59309333]" started-at="2023-12-21T17:21:52 IST" name="dataDrivenRMG" data-provider="Hardcoded" finished-at="2023-12-21T17:21:53 IST" duration-ms="131" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ronaldo_Revaldo_Ronaldinho]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Football]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Completed]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[2020]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataDrivenRMG -->
-      </class> <!-- practise.DDTusingDataProviderAndPojo -->
+        </test-method> <!-- schemaCheckRmg -->
+      </class> <!-- practise.SchemaValidator -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
