@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practise.SchemaValidator">
+      <class name="differentWaysToPostRequest.IV_CreateProjectWithPOJO">
         <methods>
-          <include name="schemaCheckRmg"/>
+          <include name="createProject"/>
         </methods>
-      </class> <!-- practise.SchemaValidator -->
+      </class> <!-- differentWaysToPostRequest.IV_CreateProjectWithPOJO -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
