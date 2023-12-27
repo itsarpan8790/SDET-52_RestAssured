@@ -3,9 +3,9 @@ package pojoClass;
 public class Spouse {
 
 	// Step:1 Declare Variables Globally
-	String name;
-	int age;
-	long[] mobNo;
+	private String name;
+	private int age;
+	private long[] mobNo;
 
 	// Step 2:Create Constructor to initialise Variables
 	public Spouse(String name, int age, long[] mobNo) {

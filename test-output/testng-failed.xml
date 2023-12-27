@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="differentWaysToPostRequest.IV_CreateProjectWithPOJO">
+      <class name="com.rmg.testscripts.Scene2_CreateProject">
         <methods>
           <include name="createProject"/>
         </methods>
-      </class> <!-- differentWaysToPostRequest.IV_CreateProjectWithPOJO -->
+      </class> <!-- com.rmg.testscripts.Scene2_CreateProject -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
