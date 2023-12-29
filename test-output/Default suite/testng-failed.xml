@@ -5,6 +5,7 @@
     <classes>
       <class name="com.rmg.testscripts.Scene2_CreateProject">
         <methods>
+          <include name="bsConfig"/>
           <include name="createProject"/>
         </methods>
       </class> <!-- com.rmg.testscripts.Scene2_CreateProject -->

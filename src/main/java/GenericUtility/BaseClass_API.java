@@ -1,5 +1,6 @@
 package GenericUtility;
 
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import io.restassured.builder.RequestSpecBuilder;
@@ -19,8 +20,10 @@ public class BaseClass_API {
 	
 	@BeforeSuite
 	public void bsConfig() throws Throwable {
+		//Connection To DB
 		dbUtil.connectToDB();
 		
+		//ReqResp Builders
 		RequestSpecBuilder reqSB = new RequestSpecBuilder();
 		request = reqSB.setBaseUri("http://rmgtestingserver:8084")
         .setContentType(ContentType.JSON).build();
@@ -29,8 +32,9 @@ public class BaseClass_API {
 		response = resSb.expectContentType(ContentType.JSON).build();
 		
 	}
-	
+	@AfterSuite
 	public void afConfig() throws Throwable {
+		//Closing connection
 		dbUtil.closeDB();
 	}
 }
