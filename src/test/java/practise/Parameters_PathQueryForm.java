@@ -49,7 +49,8 @@ public class Parameters_PathQueryForm {
 		ReqresPojo rp = new ReqresPojo("Arpan", "Tech Analyst");
 		
 		//Preconditions
-		given().queryParam("page", 2).body(rp).contentType(ContentType.JSON)
+		given().queryParam("page", 2)
+		.body(rp).contentType(ContentType.JSON)
 		//Actions
 		.when().get("https://reqres.in/api/users")
 		//Validation

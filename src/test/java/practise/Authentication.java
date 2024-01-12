@@ -17,7 +17,9 @@ public class Authentication {
 		baseURI = "http://rmgtestingserver";
 		port = 8084;
 
-		given().auth().basic("rmgyantra", "rmgy@9999").when().get("/login").then().statusCode(202)
+		given().auth().basic("rmgyantra", "rmgy@9999")
+		.when().get("/login")
+		.then().statusCode(202)
 				.contentType(ContentType.JSON).log().all();
 	}
 
@@ -27,7 +29,9 @@ public class Authentication {
 		baseURI = "http://rmgtestingserver";
 		port = 8084;
 
-		given().auth().preemptive().basic("rmgyantra", "rmgy@9999").when().get("/login").then().statusCode(202)
+		given().auth().preemptive().basic("rmgyantra", "rmgy@9999")
+		.when().get("/login")
+		.then().statusCode(202)
 				.contentType(ContentType.JSON).log().all();
 	}
 	
@@ -47,6 +51,7 @@ public class Authentication {
 	public void bearerToken() {
         
 		JavaUtility jutil=new JavaUtility();
+		
 		JSONObject job = new JSONObject();
 		job.put("name", "Dhoni"+jutil.getRandomNumber());
 

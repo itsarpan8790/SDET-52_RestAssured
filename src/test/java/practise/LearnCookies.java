@@ -11,7 +11,7 @@ import io.restassured.response.Response;
 
 public class LearnCookies {
 
-	// Sending Cocckie
+	// Sending Cokies
 	@Test
 	public void sendCookies() {
 		given().cookies("1P_JAR", "2023-12-26-09", "AEC", "Ackid1RCnj_nTXOlesE5aft7RG1tOApHymmxbmLBEP_a3aKGfNWn-orHOkM")

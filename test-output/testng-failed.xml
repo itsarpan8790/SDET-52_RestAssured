@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.rmg.testscripts.Scene2_CreateProject">
+      <class name="mock.PublicapisValidation">
         <methods>
-          <include name="bsConfig"/>
-          <include name="createProject"/>
+          <include name="fetchAPI"/>
         </methods>
-      </class> <!-- com.rmg.testscripts.Scene2_CreateProject -->
+      </class> <!-- mock.PublicapisValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
