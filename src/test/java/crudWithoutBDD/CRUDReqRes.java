@@ -16,13 +16,14 @@ public class CRUDReqRes {
 		job.put("name", "Khiladi 786");
 		job.put("Job", "Tester");
 
-		Response resp = RestAssured.given().contentType(ContentType.JSON).body(job).post("https://reqres.in/api/users");
+		Response resp = RestAssured.given().contentType(ContentType.JSON).body(job)
+				.post("https://reqres.in/api/users");
 
 		resp.then().log().all();
 		int respCode = resp.getStatusCode();
 		String respText = resp.getStatusLine();
 
-		System.out.println(respCode + " " + respText);
+		System.out.println(respCode + "--> " + respText);
 		Assert.assertEquals(respCode, 201);
 
 	}
