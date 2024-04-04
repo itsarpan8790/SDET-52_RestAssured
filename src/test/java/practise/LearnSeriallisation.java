@@ -16,11 +16,11 @@ public class LearnSeriallisation {
 	@Test
 	public void practiseSerialisation() throws Throwable, JsonMappingException, IOException {
 		File file = new File(".\\src\\test\\resources\\Serialisation\\1_SerialDeserial.json");
-		Employee_PojoSerialDeserial emp1 = new Employee_PojoSerialDeserial("Arpan", 30, 8587851858l);
+		Employee_PojoSerialDeserial emp1 = new Employee_PojoSerialDeserial("Arpan", 33, 858785185);
 
 		ObjectMapper obm = new ObjectMapper();
 
-		// obm.writeValue(file, emp1);
+		 //obm.writeValue(file, emp1);-prints in single line
 		obm.writerWithDefaultPrettyPrinter().writeValue(file, emp1);
 
 	}

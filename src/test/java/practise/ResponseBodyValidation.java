@@ -73,7 +73,8 @@ public class ResponseBodyValidation {
 		Response resp = when().get("https://reqres.in/api/users?page=2");
 
 		// Step 3.Validations
-		List<String> allEmail = resp.jsonPath().get("data[*].email");
+		//List<String> allEmail = resp.jsonPath().get("data[*].email");
+		List<String> allEmail = resp.jsonPath().get("data.email");
 		boolean flag = false;
 
 		for (String email : allEmail) {
@@ -87,7 +88,7 @@ public class ResponseBodyValidation {
 		Assert.assertTrue(flag);
 		System.out.println("Data Verified");
 
-		resp.then()
+		resp.then().assertThat()
 		.time(Matchers.lessThan(5000l), TimeUnit.MILLISECONDS);
 		//.log().all();
 

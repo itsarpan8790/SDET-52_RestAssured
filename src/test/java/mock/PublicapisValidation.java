@@ -14,11 +14,12 @@ public class PublicapisValidation {
 
 		Response resp = when().get("https://api.publicapis.org/entries");
 		List<String> allApi = resp.jsonPath().get("entries.API");
+		//List<String> allApi = resp.jsonPath().get("entries.Description");
 		for (String api : allApi) {
 			System.out.println(api);
 		}
 
-		String ApiAt1st = resp.jsonPath().get("entries[1].API");
+		String ApiAt1st = resp.jsonPath().get("entries[0].API");
 		System.out.println(ApiAt1st);
 	}
 

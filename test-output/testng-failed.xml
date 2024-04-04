@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mock.PublicapisValidation">
+      <class name="practise.ResponseBodyValidation">
         <methods>
-          <include name="fetchAPI"/>
+          <include name="dynamiResponseBodyValidationReqres"/>
         </methods>
-      </class> <!-- mock.PublicapisValidation -->
+      </class> <!-- practise.ResponseBodyValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

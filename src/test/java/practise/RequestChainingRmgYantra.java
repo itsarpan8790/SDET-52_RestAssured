@@ -46,7 +46,7 @@ public class RequestChainingRmgYantra {
 		 
 		//Validations
 		 postResp.then()
-		 .assertThat() //assertThat()-it isnot mandatory..only by luking to script one can know assertion starts
+		 .assertThat() //assertThat()-it isnot mandatory..only by looking to script one can know assertion starts
 		 .time(Matchers.lessThan(5000l), TimeUnit.MILLISECONDS)
 		 .statusCode(201).log().all();
 		 

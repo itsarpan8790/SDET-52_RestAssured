@@ -15,7 +15,7 @@ public class EmployeeWithObjectArray_PojoSerialDeserial {
 			this.mobNo = mobNo;
 		}
 		
-		// Step 3: Create Empty Constructor to trigger Seriallisation and Deserialisation
+		// Step 3: Create Empty Constructor to trigger  Deserialisation
 		public EmployeeWithObjectArray_PojoSerialDeserial() {
 
 		}

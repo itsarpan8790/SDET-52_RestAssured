@@ -3,8 +3,8 @@
   "age" : 30,
   "mobNo" : [ 8587851858, 9876543210 ],
   "spouse" : {
-    "name" : "Sim",
-    "age" : 25,
+    "name" : "SimAn",
+    "age" : 26,
     "mobNo" : [ 1234, 5678 ]
   }
 }

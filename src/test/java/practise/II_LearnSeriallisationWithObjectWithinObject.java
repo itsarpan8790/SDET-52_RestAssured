@@ -19,7 +19,7 @@ public class II_LearnSeriallisationWithObjectWithinObject {
 		File file = new File(".\\src\\test\\resources\\Serialisation\\3_SerialDeserial_ObjectWithinObject.json");
 		
 		long [] s_phn= {1234,5678};
-		Spouse spouseObj = new Spouse("Sim", 25, s_phn);
+		Spouse spouseObj = new Spouse("SimAn", 26, s_phn);
 		//spouseObj.setName("S.A.");	
 		long [] phn= {8587851858l,9876543210l};
 		EmployeeWithObjectInsideObject_PojoSerialDeserial emp1=new EmployeeWithObjectInsideObject_PojoSerialDeserial("Arpan", 30, phn, spouseObj);
@@ -52,5 +52,22 @@ public class II_LearnSeriallisationWithObjectWithinObject {
 			System.out.println(mob);
 		}
 		
+		
+		System.out.println("********Changing and Printing Spouse Details**************");
+		
+//		long [] s_phn= {1234,5678};
+//		Spouse spouseObj = new Spouse("SimAnand", 25, s_phn);
+//		data.setSpouse(spouseObj);
+		
+		data.getSpouse().setName("SimAnand");
+		data.getSpouse().setAge(27);
+		long [] s_phn= {56789,12345};
+		data.getSpouse().setMobNo(s_phn);
+		
+		System.out.println(data.getSpouse().getName());
+		System.out.println(data.getSpouse().getAge());
+		for(long mob:data.getSpouse().getMobNo()) {
+			System.out.println(mob);
+		}
 	}
 }

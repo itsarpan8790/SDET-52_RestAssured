@@ -18,8 +18,8 @@ public class I_LearnSeriallisationWithObjectArray {
 	public void practiseSerialisation() throws Throwable, JsonMappingException, IOException {
 		File file = new File(".\\src\\test\\resources\\Serialisation\\2_SerialDeserial_ObjectArray.json");
 		
-		long [] phnNo= {8785851858l,9876543210l};
-		EmployeeWithObjectArray_PojoSerialDeserial emp1 = new EmployeeWithObjectArray_PojoSerialDeserial("Arpan", 30, phnNo);
+		long [] phnNo= {8785851858l,987654321};
+		EmployeeWithObjectArray_PojoSerialDeserial emp1 = new EmployeeWithObjectArray_PojoSerialDeserial("Arpan", 35, phnNo);
 
 		ObjectMapper obm = new ObjectMapper();
 
@@ -33,6 +33,7 @@ public class I_LearnSeriallisationWithObjectArray {
 		
 		ObjectMapper obm = new ObjectMapper();
 		EmployeeWithObjectArray_PojoSerialDeserial data = obm.readValue(file, EmployeeWithObjectArray_PojoSerialDeserial.class);
+		
 		System.out.println(data.getEname());
 		System.out.println(data.getAge());
 		System.out.println(data.getMobNo()[0]);
@@ -46,5 +47,13 @@ public class I_LearnSeriallisationWithObjectArray {
 		for(long phn:data.getMobNo()) {
 			System.out.println(phn);
 		}
+		
+		System.out.println("Setting mob no and reading");
+		long [] phonearr= {829887873,858785185};
+		data.setMobNo(phonearr);
+		for(int i=0;i<data.getMobNo().length;i++) {
+			System.out.println(data.getMobNo()[i]);
+		}
+	
 	}
 }

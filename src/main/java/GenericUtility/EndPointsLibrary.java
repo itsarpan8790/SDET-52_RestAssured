@@ -8,7 +8,7 @@ public interface EndPointsLibrary {
 	
 	String createProject="/addProject";
 	String getAllProjects="/projects";
-	String getSingleProjects="/projects/";
+	String getSingleProjects="/projects/"; ///project/projectID
 	String updateProject="/projects/";
 	String deleteProject="/projects/";
 

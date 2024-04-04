@@ -18,7 +18,7 @@ public class IV_CreateProjectWithPOJO {
 	public void createProject() {
 		
 		//Creation Object Of PojoClass
-		IV_UsingPOJO_RmgYantra pojo = new IV_UsingPOJO_RmgYantra("Arpan", "Pubg"+jUtil.getRandomNumber(), "Ongoing", 4);
+		PojoFor_IV_CreateProjectWithPOJO pojo = new PojoFor_IV_CreateProjectWithPOJO("Arpan", "Pubg"+jUtil.getRandomNumber(), "Ongoing", 4);
 		
 		baseURI = "http://rmgtestingserver";
 		port = 8084;

@@ -1,13 +1,13 @@
 package differentWaysToPostRequest;
 
-public class IV_UsingPOJO_RmgYantra {
+ public class PojoFor_IV_CreateProjectWithPOJO {
 
 	String createdBy;
 	String projectName;
 	String status;
 	int teamSize;
 
-	public IV_UsingPOJO_RmgYantra(String createdBy, String projectName, String status, int teamSize) {
+	public PojoFor_IV_CreateProjectWithPOJO(String createdBy, String projectName, String status, int teamSize) {
 		this.createdBy = createdBy;
 		this.projectName = projectName;
 		this.status = status;

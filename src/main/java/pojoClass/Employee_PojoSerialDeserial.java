@@ -2,7 +2,7 @@ package pojoClass;
 
 public class Employee_PojoSerialDeserial {
 	
-	// Step:1 Declare Variables Globally
+	// Step:1 Declare Variables Globally as private
 	private String ename;
 	private int age;
 	private long mobNo;
