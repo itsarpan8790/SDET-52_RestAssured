@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-04T19:29:51 IST" name="Default suite" finished-at="2024-04-04T19:29:54 IST" duration-ms="2748">
+  <suite started-at="2024-04-05T17:09:56 IST" name="Default suite" finished-at="2024-04-05T17:09:59 IST" duration-ms="2774">
     <groups>
     </groups>
-    <test started-at="2024-04-04T19:29:51 IST" name="Default test" finished-at="2024-04-04T19:29:54 IST" duration-ms="2748">
-      <class name="practise.ResponseBodyValidation">
-        <test-method signature="dynamiResponseBodyValidationReqres()[pri:0, instance:practise.ResponseBodyValidation@537f60bf]" started-at="2024-04-04T19:29:52 IST" name="dynamiResponseBodyValidationReqres" finished-at="2024-04-04T19:29:54 IST" duration-ms="2696" status="PASS">
+    <test started-at="2024-04-05T17:09:56 IST" name="Default test" finished-at="2024-04-05T17:09:59 IST" duration-ms="2774">
+      <class name="practise.LearnCookies">
+        <test-method signature="getCookies()[pri:0, instance:practise.LearnCookies@537f60bf]" started-at="2024-04-05T17:09:57 IST" name="getCookies" finished-at="2024-04-05T17:09:59 IST" duration-ms="2707" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dynamiResponseBodyValidationReqres -->
-      </class> <!-- practise.ResponseBodyValidation -->
+        </test-method> <!-- getCookies -->
+      </class> <!-- practise.LearnCookies -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

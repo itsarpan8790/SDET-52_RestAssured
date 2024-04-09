@@ -1,4 +1,4 @@
-package practise;
+ package practise;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.testng.annotations.Test;
 
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class LearnCookies {
@@ -14,8 +15,8 @@ public class LearnCookies {
 	// Sending Cokies
 	@Test
 	public void sendCookies() {
-		given().cookies("1P_JAR", "2023-12-26-09", "AEC", "Ackid1RCnj_nTXOlesE5aft7RG1tOApHymmxbmLBEP_a3aKGfNWn-orHOkM")
-				.when().get("https://www.google.com").then().log().all();
+		given().cookies("1P_JAR", "2023-12-26-09", "AEC", "Ackid1RCnj_nTXOlesE5aft7RG1tOApHymmxbmLBEP_a3aKGfNWn-orHOkM")	
+		.when().get("https://www.google.com").then().log().all();
 
 	}
 
